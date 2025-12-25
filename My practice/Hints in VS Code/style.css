@@ -1,0 +1,18 @@
+.cards:hover {
+background-color: rgb(33, 44, 164);
+transition: 0.3s;  
+transform: scale(1.02);
+
+
+}
+.cards{
+    padding-left: 50px;
+    margin: 40px;
+    background-color: rgb(38, 38, 226); 
+    color: rgb(206, 214, 197);
+    border-radius: 10px;;
+
+}
+p{
+    padding-left: 10px;
+}

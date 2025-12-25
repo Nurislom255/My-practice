@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="font-size: 20px;">
+    <h1>HTML forms are used to collect data from people/users</h1>
+        <p>TO create a HTML form, you need <span style="background-color: gray; padding: 5x; border-radius: 4px;">&lt;form&gt;</span> tag</p>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>&lt;input type="text"&gt;</td>
+            <td>Displays a single line text input field</td>
+        </tr>
+        <tr>
+            <td>&lt;Input type="radio"&gt;</td>
+            <td>Displays a radio button</td>
+        </tr>
+        <tr>
+            <td>&lt;input type="checkbox"&gt;</td>
+            <td>Displays a checkbox</td>
+        </tr>
+        <tr>
+            <td>&lt;input type="submit"&gt;</td>
+            <td>Displays a submit button</td>
+        </tr>
+        <tr>
+            <td>&lt;input type="button"&gt;</td>
+            <td>Displays a clickable button</td>
+        </tr>
+    </table>
+    <h2>In order to format selected table cells (sppecifically, rows), use <span style="color: red;">tr:nth-child(odd/even){}</span></h2>
+    <form action="Succes page.html" method="get">
+        <label for="textid">Enter your name</label>
+        <input type="text" id="textid" placeholder="Type here your name"> <br>
+        <input type="radio" id="radiobutton" name="gender">
+        <label for="radiobutton">I want. Yesss!</label>
+        <input type="submit" name="Submission" id="form1id" value="Submit Form";>
+
+
+
+    </form>
+    <div>
+        <h2>method="post" <span style=" padding: 5px;;background-color: gray; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; border-radius: 4px;">vs</span> method="get"</h2>
+            <p><span style="background-color: yellow; padding: 5px; font-size: 20px; border-radius: 5px;">method post</span> shows name and value pairs are not visible, and they are useful for sensitive information like username passwords and logins</p>
+            <p><span style="background-color: yellow; padding: 5px; font-size: 20px; border-radius: 5px;">method get</span> shows name and value pairs in the URL, and they are useful for non-sensitive information like search queries</p>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

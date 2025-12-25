@@ -1,0 +1,28 @@
+div{
+    background-color: green;
+
+
+
+
+}
+footer, header{
+    background-color: yellow;
+    margin: 10px;
+}
+.parent{
+    position: relative;
+
+
+
+}
+.div1, .div2, .div3{
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+.child{
+    width: 1fr;
+    height: 100px;
+    display:block;
+}
