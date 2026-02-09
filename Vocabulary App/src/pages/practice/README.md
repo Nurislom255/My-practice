@@ -1,0 +1,1 @@
+This folder would normally contain the practice page’s implementation.  The current version keeps logic in `src/main.js` for brevity.

@@ -1,0 +1,5 @@
+Vocabulary App
+
+This lightweight web application helps you build your vocabulary through definitions, synonyms, and antonyms.  Use the navigation links to browse the word list, add your own entries, practise with flashcards, or play matching games.
+
+All data is stored in your browser and never leaves your device.

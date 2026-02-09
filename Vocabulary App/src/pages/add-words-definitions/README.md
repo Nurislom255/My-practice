@@ -1,0 +1,1 @@
+This directory is reserved for a dedicated “Add Words” page module.  In this minimal implementation the code resides in `src/main.js`.

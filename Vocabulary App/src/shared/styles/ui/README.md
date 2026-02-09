@@ -1,0 +1,1 @@
+Component‑level CSS modules would live here.  In this minimal implementation we use global styles under `/styles`.

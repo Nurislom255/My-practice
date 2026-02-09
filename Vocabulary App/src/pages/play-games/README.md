@@ -1,0 +1,1 @@
+This folder is reserved for the simple matching game implementation.  See `src/main.js` for the functional code.

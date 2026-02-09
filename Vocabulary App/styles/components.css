@@ -1,0 +1,98 @@
+.card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  margin-bottom: var(--spacing-small);
+}
+
+.card p {
+  margin-bottom: var(--spacing-small);
+}
+
+.button {
+  display: inline-block;
+  padding: var(--spacing-small) var(--spacing-medium);
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  text-align: center;
+}
+
+.button.primary {
+  background-color: var(--color-primary);
+}
+
+.button:hover {
+  background-color: var(--color-accent);
+}
+
+form {
+  max-width: 500px;
+}
+
+form .form-group {
+  margin-bottom: var(--spacing-medium);
+}
+
+form label {
+  display: block;
+  margin-bottom: var(--spacing-small);
+  font-weight: 600;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: var(--spacing-small);
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.flashcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-large);
+  border: 2px dashed var(--color-secondary);
+  border-radius: var(--border-radius);
+  background-color: white;
+  cursor: pointer;
+  min-height: 200px;
+}
+
+.game-question {
+  margin-bottom: var(--spacing-medium);
+  font-weight: bold;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-small);
+}
+
+.choice {
+  padding: var(--spacing-small);
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.choice:hover {
+  background-color: var(--color-accent);
+}

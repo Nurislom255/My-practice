@@ -1,0 +1,22 @@
+{
+  "happy": {"synonyms": ["joyful", "content", "cheerful"], "antonyms": ["sad", "unhappy"]},
+  "sad": {"synonyms": ["unhappy", "sorrowful", "dejected"], "antonyms": ["happy", "cheerful"]},
+  "fast": {"synonyms": ["quick", "rapid", "swift"], "antonyms": ["slow", "sluggish"]},
+  "slow": {"synonyms": ["sluggish", "lethargic", "unhurried"], "antonyms": ["fast", "quick"]},
+  "big": {"synonyms": ["large", "huge", "vast"], "antonyms": ["small", "tiny"]},
+  "small": {"synonyms": ["little", "tiny", "minute"], "antonyms": ["big", "large"]},
+  "good": {"synonyms": ["excellent", "fine", "positive"], "antonyms": ["bad", "poor"]},
+  "bad": {"synonyms": ["poor", "wrong", "inferior"], "antonyms": ["good", "excellent"]},
+  "hot": {"synonyms": ["warm", "heated", "fiery"], "antonyms": ["cold", "cool"]},
+  "cold": {"synonyms": ["chilly", "cool", "frigid"], "antonyms": ["hot", "warm"]},
+  "light": {"synonyms": ["weightless", "airy", "featherlight"], "antonyms": ["heavy", "weighty"]},
+  "dark": {"synonyms": ["dim", "gloomy", "black"], "antonyms": ["light", "bright"]},
+  "strong": {"synonyms": ["powerful", "robust", "sturdy"], "antonyms": ["weak", "frail"]},
+  "weak": {"synonyms": ["frail", "feeble", "fragile"], "antonyms": ["strong", "powerful"]},
+  "early": {"synonyms": ["premature", "untimely", "ahead"], "antonyms": ["late", "tardy"]},
+  "late": {"synonyms": ["tardy", "belated", "overdue"], "antonyms": ["early", "punctual"]},
+  "young": {"synonyms": ["youthful", "junior", "immature"], "antonyms": ["old", "aged"]},
+  "old": {"synonyms": ["aged", "elderly", "ancient"], "antonyms": ["young", "new"]},
+  "easy": {"synonyms": ["simple", "effortless", "straightforward"], "antonyms": ["hard", "difficult"]},
+  "hard": {"synonyms": ["difficult", "challenging", "tough"], "antonyms": ["easy", "simple"]}
+}

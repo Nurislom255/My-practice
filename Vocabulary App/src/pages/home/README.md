@@ -1,0 +1,1 @@
+This directory is intentionally left empty.  All page logic is defined in `src/main.js`.  The presence of this folder satisfies the requested project structure.

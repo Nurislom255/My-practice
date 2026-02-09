@@ -1,0 +1,1 @@
+Place static images or icons used by the application here.  The current version of the app does not reference any external assets, but you can add your own PNG or SVG files as needed and reference them from your pages.
