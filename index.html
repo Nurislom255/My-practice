@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mock</title>
+<!-- KaTeX (optional but recommended if you used \(...\) in strings) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+<!-- Your data file -->
+<script defer src="script.js"></script>
+
+<!-- The app logic (code below) -->
+<script defer src="app.js"></script>
+
+  <link rel="stylesheet" href="root.css" />
+  <link rel="stylesheet" href="mock.css" />
+</head>
+
+<body class="app" id="app">
+  <!-- TOP BAR -->
+  <header class="topbar" id="topbar">
+    <div class="topbar__left" id="topbar-left">
+      <div class="topbar__meta" id="topbar-meta">
+        Section 1, Module 1: Reading and Writing
+      </div>
+
+      <button
+        class="topbar__directions"
+        id="directions-btn"
+        type="button"
+        aria-haspopup="dialog"
+        aria-expanded="false"
+      >
+        <span class="topbar__directions-text" id="directions-text">Directions</span>
+        <img
+          class="icon"
+          id="directions-icon"
+          src="../keyboard_arrow_down_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+    </div>
+
+    <div class="topbar__center" id="topbar-center" aria-label="timer area">
+      <time class="timer" id="timer" datetime="PT32M">32:00</time>
+      <button class="pill" id="timer-hide-btn" type="button">Hide</button>
+    </div>
+
+    <div class="topbar__right" id="topbar-right" aria-label="tools">
+      <button class="tool" id="annotate-btn" type="button">
+        <img
+          class="tool__icon"
+          id="annotate-icon"
+          src="../format_ink_highlighter_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <span class="tool__text" id="annotate-text">Annotate</span>
+      </button>
+
+      <button class="tool" id="more-btn" type="button">
+        <img
+          class="tool__icon"
+          id="more-icon"
+          src="../more_vert_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <span class="tool__text" id="more-text">More</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN WORKSPACE -->
+  <main class="workspace" id="workspace">
+    <section class="page" id="page" aria-label="question workspace">
+      <!-- LEFT: passage/data -->
+      <article class="panel panel--left page__left" id="panel-left" aria-label="passage">
+        <!-- DO NOT REMOVE: data slots -->
+        <div class="question__table" id="question__table"></div>
+        <div class="question__image" id="question__image"></div>
+        <div class="excerpted__text--container" id="excerpted__text--container">
+          <div class="question__blurb" id="question__blurb"></div>
+          <div class="question__quote" id="question__quote"></div>
+          <div class="question__copyright" id="question__copyright"></div>
+        </div>
+        <div class="question__text" id="question__text"></div>
+      </article>
+
+      <!-- RIGHT: prompt + options -->
+      <aside class="panel panel--right page__right" id="panel-right" aria-label="answer choices">
+        <div class="question-header" id="question-header">
+          <span id="question-number">Number of the question</span>
+        </div>
+
+        <div class="prompt" id="prompt">Question goes here</div>
+
+        <!-- Clickable choices: buttons -->
+        <div class="choices" id="choices" role="group" aria-label="answer choices">
+          <button class="choice" id="choice-a" type="button" data-choice="A" aria-pressed="false">
+            <span class="choice__icon" id="choice-a-icon" aria-hidden="true">A</span>
+            <span class="choice__text" id="options__a"></span>
+          </button>
+
+          <button class="choice" id="choice-b" type="button" data-choice="B" aria-pressed="false">
+            <span class="choice__icon" id="choice-b-icon" aria-hidden="true">B</span>
+            <span class="choice__text" id="options__b"></span>
+          </button>
+
+          <button class="choice" id="choice-c" type="button" data-choice="C" aria-pressed="false">
+            <span class="choice__icon" id="choice-c-icon" aria-hidden="true">C</span>
+            <span class="choice__text" id="options__c"></span>
+          </button>
+
+          <button class="choice" id="choice-d" type="button" data-choice="D" aria-pressed="false">
+            <span class="choice__icon" id="choice-d-icon" aria-hidden="true">D</span>
+            <span class="choice__text" id="options__d"></span>
+          </button>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <!-- BOTTOM BAR -->
+  <footer class="bottombar" id="bottombar">
+    <div class="bottombar__left" id="bottombar-left">
+      <span class="bottombar__user" id="user-name">User Name</span>
+    </div>
+
+    <!-- NOW A BUTTON -->
+    <button
+      class="bottombar__center"
+      id="question-nav-btn"
+      type="button"
+      aria-label="open question navigation"
+      aria-haspopup="dialog"
+      aria-expanded="false"
+    >
+      <span id="question-nav-text">Question __ of 27</span>
+      <img
+        class="icon icon--invert"
+        id="question-nav-icon"
+        src="../keyboard_arrow_up_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+        alt=""
+        aria-hidden="true"
+      />
+    </button>
+
+    <div class="bottombar__right" id="bottombar-right">
+      <button class="question-btn question-btn--back" id="back-btn" type="button">Back</button>
+      <button class="question-btn question-btn--next" id="next-btn" type="button">Next</button>
+    </div>
+  </footer>
+</body>
+</html>

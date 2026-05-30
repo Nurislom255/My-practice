@@ -1,0 +1,32 @@
+:root{
+  --stripe-h: 2px;
+  --dash: 26px;
+  --gap: 6px;
+  --slot: calc(var(--dash) + var(--gap));
+
+  /* --c1: rgb(255, 0, 0, 0.8);
+  --c2: rgb(240, 180, 140, 0.8);
+  --c3: rgb(0, 0, 255, 0.8);
+  --c4: rgb(0, 255, 0, 0.8); */
+
+  --c1: rgb(205, 45, 91);
+  --c2: rgb(236, 196, 167);
+  --c3: rgb(45, 27, 162);
+  --c4: rgb(59, 182, 75);
+  
+  /* the repeating dashed stripe */
+  --stripe: repeating-linear-gradient(
+    90deg,
+    var(--c1) 0 var(--dash),
+    transparent var(--dash) var(--slot),
+
+    var(--c2) var(--slot) calc(var(--slot) + var(--dash)),
+    transparent calc(var(--slot) + var(--dash)) calc(2 * var(--slot)),
+
+    var(--c3) calc(2 * var(--slot)) calc(2 * var(--slot) + var(--dash)),
+    transparent calc(2 * var(--slot) + var(--dash)) calc(3 * var(--slot)),
+
+    var(--c4) calc(3 * var(--slot)) calc(3 * var(--slot) + var(--dash)),
+    transparent calc(3 * var(--slot) + var(--dash)) calc(4 * var(--slot))
+  );
+}
